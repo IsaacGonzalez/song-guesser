@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Song Guesser</title>
+
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!-- webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+	<div class="title">
+   		<center>
+    	<img src="img/title.png" id="title" alt="Song Guesser"/>
+        </center>
+    </div>
+    <div class="content">    
+        <center>    
+    	<div class="genres">
+
+        	<a class="button" id="rock" data-query="chill">Chill</a>
+        	<a class="button" id="pop" data-query="pop">Pop</a>
+        	<a class="button" id="hiphop" data-query="acoustic">Acoustic</a>
+        	<a class="button" id="electronic" data-query="dance">Dance</a>
+        	<a class="button" id="punk" data-query="country">Country</a>            
+
+        </div>
+        <div id="load">
+        	<img src="img/load.gif"	alt="Loading..." />
+        </div>
+        </center>
+        <div class="game">
+        
+        <center>
+        
+        <p id="controls">
+        <table>
+        	<tr>
+            <td>
+                <a href="" id="play">play</a>
+                <a href="" id="pause">pause</a>
+            </td>
+            <td><a id="next">next</a></td>
+            <td><a href="" id="stop">stop</a></td>
+            <td>
+                <a href="" id="mute">mute</a>
+                <a href="" id="unmute">unmute</a>
+            </td>
+            <td>
+            	
+            </td>
+            </tr>
+        </table>
+        </p>
+        <div id="player" class="jp-jplayer"></div>
+        <!-- time -->
+        <p>  <span id="currentTime"></span> - <span id="duration"></span>    </p>
+        <div id="guesses">
+            <a id="guess1" class="guess">Guess 1</a>
+            <a id="guess2" class="guess">Guess 2</a>
+            <a id="guess3" class="guess">Guess 3</a>
+        </div>
+        <div id="output">
+        </div>
+        <!-- itunes link -->
+        <div>    <a href="" id="buy" >Buy</a>    </div>
+        
+        
+        </center>
+
+        </div><!-- end of div.game -->
+    </div>
+    <div class="footer">
+    	<p><span id="credit" class="opensans" >Powered by </span><img src="img/8tracks_small.png" alt="8tracks" /></p>
+    </div>
+</div><!-- END OF WRAPPER -->
+<span class="hidden"></span>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
